@@ -1,0 +1,6 @@
+{
+  "name": "CaseCoach",
+  "description": "Consulting case interview practice for undergraduate business students with AI interviewer and skill scorecard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
