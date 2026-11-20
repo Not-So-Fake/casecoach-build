@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #0f172a;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Crisp consulting table styling inside rendered Markdown */
+.case-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.case-markdown thead th {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #cbd5e1;
+  white-space: nowrap;
+}
+
+.case-markdown tbody td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  vertical-align: top;
+}
+
+.case-markdown tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.case-markdown tbody tr:hover td {
+  background-color: #f8fafc;
+}
+
+.case-markdown p + p {
+  margin-top: 0.625rem;
+}
+
+.case-markdown ul,
+.case-markdown ol {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.case-markdown ul {
+  list-style-type: disc;
+}
+
+.case-markdown ol {
+  list-style-type: decimal;
+}
+
+.case-markdown li + li {
+  margin-top: 0.25rem;
+}
+
+.case-markdown strong {
+  font-weight: 600;
+  color: #0f172a;
+}
